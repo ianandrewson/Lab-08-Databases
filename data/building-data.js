@@ -1,81 +1,81 @@
 module.exports = [
     {
-        'Name': 'Woolsthorpe Manor',
-        'Built': '17th century',
-        'Is home?': true,
-        'Location': 'Grantham, Lincolnshire, England',
-        'URL': '../public/assets/Woolsthorpe_Manor.jpg',
-        'Height': '3 stories'
+        'name': 'Woolsthorpe Manor',
+        'built': '17th century',
+        'is_home': true,
+        'location': 'Grantham, Lincolnshire, England',
+        'url': '../public/assets/Woolsthorpe_Manor.jpg',
+        'height': '3 stories'
     },
     {
-        'Name': 'Amalienborg',
-        'Built': '1760',
-        'Is home?': true,
-        'Location': 'Copenhagen, Denmark',
-        'URL': '../public/assets/Amalienborg.jpg',
-        'Height': '4 stories'
+        'name': 'Amalienborg',
+        'built': '1760',
+        'is_home': true,
+        'location': 'Copenhagen, Denmark',
+        'url': '../public/assets/Amalienborg.jpg',
+        'height': '4 stories'
     },
     {
-        'Name': 'Sydney Opera House',
-        'Built': 'Oct 20th 1973',
-        'Is home?': false,
-        'Location': 'Sydney, Australia',
-        'URL': '../public/assets/sydney_opera_house.jpg',
-        'Height': '213 ft'
+        'name': 'Sydney Opera House',
+        'built': 'Oct 20th 1973',
+        'is_home': false,
+        'location': 'Sydney, Australia',
+        'url': '../public/assets/sydney_opera_house.jpg',
+        'height': '213 ft'
     },
     {
-        'Name': 'Bilbo Baggins\'s House',
-        'Built': 'TA 2889',
-        'Is home?': true,
-        'Location': 'Bagshot Row, Hobbiton',
-        'URL': '../public/assets/baggins.png',
-        'Height': '1 story'
+        'name': 'Bilbo Baggins\'s House',
+        'built': 'TA 2889',
+        'is_home': true,
+        'location': 'Bagshot Row, Hobbiton',
+        'url': '../public/assets/baggins.png',
+        'height': '1 story'
     },
     {
-        'Name': 'Ian\'s Childhood Home',
-        'Built': '1963',
-        'Is Home?': true,
-        'Location': 'Novato, California',
-        'URL': '../public/assets/hildhood_home.jpg',
-        'Height': '2.5 stories'
+        'name': 'Ian\'s Childhood Home',
+        'built': '1963',
+        'is_home': true,
+        'location': 'Novato, California',
+        'url': '../public/assets/hildhood_home.jpg',
+        'height': '2.5 stories'
     },
     { 
         'name': 'Abraj Al-Bait Clock Tower',
         'built': 2012,
-        'is home?': true,
-        'Location': 'Mecca, Saudi Arabia',
+        'is_home': true,
+        'location': 'Mecca, Saudi Arabia',
         'url': 'https://en.wikipedia.org/wiki/Abraj_Al_Bait#/media/File:Abraj-al-Bait-Towers.JPG',
         'height': '120 floors'
     },
     {
         'name': 'Einsteinhaus',
         'built': '1700s',
-        'is home?': true,
-        'Location': 'Berne, Germany',
+        'is_home': true,
+        'location': 'Berne, Germany',
         'url': 'https://en.wikipedia.org/wiki/Einsteinhaus#/media/File:Albert_einstein_house_bern.JPG',
         'height': '3 floors'
     },
     {
         'name': 'Palais Garnier',
         'built': '1861-1875',
-        'is home?': false,
-        'Location': 'Paris, France',
+        'is_home': false,
+        'location': 'Paris, France',
         'url': 'https://en.wikipedia.org/wiki/Palais_Garnier#/media/File:Op%C3%A9ra_Garnier_-_le_Grand_Foyer.jpg',
         'height': '184ft',
     },
     {
         'name': 'Wyndham New Yorker Hotel',
         'built': '1930',
-        'is home?': true,
-        'Location': 'New York, New York',
+        'is_home': true,
+        'location': 'New York, New York',
         'url': 'https://en.wikipedia.org/wiki/Wyndham_New_Yorker_Hotel#/media/File:NewYorker_Hotel.JPG',
         'height': '43 floors',
     },
     {
         'name': 'Strasbourg Cathedral',
         'built': '1015-1439',
-        'is home?': false,
-        'Location': 'Strasbourg, France',
+        'is_home': false,
+        'location': 'Strasbourg, France',
         'url': 'https://en.wikipedia.org/wiki/Strasbourg_Cathedral#/media/File:Strasbourg_Cathedral_Exterior_-_Diliff.jpg',
         'height': '466 ft',
     }

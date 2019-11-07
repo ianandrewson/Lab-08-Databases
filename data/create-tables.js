@@ -19,7 +19,15 @@ async function run() {
     
         // run a query to create tables
         await client.query(`
-          
+            CREATE TABLE buildings (
+                id SERIAL PRIMARY KEY NOT NULL,
+                name VARCHAR(256) NOT NULL,
+                built VARCHAR(256) NOT NULL,
+                is_home BOOLEAN NOT NULL,
+                location VARCHAR(256) NOT NULL,
+                url VARCHAR(256) NOT NULL,
+                height VARCHAR(256) NOT NULL
+            )
         `);
 
         console.log('create tables complete');
