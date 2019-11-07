@@ -5,6 +5,5 @@ class App extends Component {
 
     );
     renderHTML(
-        
     );
 }
