@@ -2,7 +2,7 @@ require('dotenv').config();
 const pg = require('pg');
 const Client = pg.Client;
 // import seed data:
-const data = require('./building-data.js');
+const buildings = require('./building-data.js');
 
 run();
 
@@ -15,7 +15,7 @@ async function run() {
         // "Promise all" does a parallel execution of async tasks
         await Promise.all(
             // map every item in the array data
-            data.map(building => {
+            buildings.map(building => {
                 return client.query(`
                 INSERT INTO buildings(
                     name, built, is_home, location, url, height
