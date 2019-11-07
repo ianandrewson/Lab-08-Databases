@@ -18,11 +18,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "start:watch": "nodemon server.js",
-    "create-tables": "node data/create-table.js",
+    "create-tables": "node data/create-tables.js",
     "drop-tables": "node data/drop-tables.js",
     "load-seed-data": "node data/load-seed-data.js",
-    "recreate-tables": "npm run drop-tables.js && npm run create-tables.js",
-    "setup-db": "npm run recreate-tables.js && npm run load-seed-data.js"
+    "recreate-tables": "npm run drop-tables && npm run create-tables",
+    "setup-db": "npm run recreate-tables && npm run load-seed-data"
   },
   "repository": {
     "type": "git",
