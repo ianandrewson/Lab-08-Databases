@@ -28,6 +28,7 @@ app.get('/api/buildings', async(req, res) => {
                 height
             FROM buildings;
         `);
+        console.log(result.rows);
         res.json(result.rows);
     }
     catch (err) {
