@@ -4,7 +4,7 @@ class Header extends Component {
     
     renderHTML() {
         return /*html*/`
-        <p>TESTEST</p>
+        <h1>Buildings</h1>
         `;
     }
 }
