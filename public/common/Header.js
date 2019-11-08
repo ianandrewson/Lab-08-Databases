@@ -4,7 +4,10 @@ class Header extends Component {
     
     renderHTML() {
         return /*html*/`
-        <p>TESTEST</p>
+        <nav>
+            <a href="../resource-list.html">Buildings</a>
+            <a href="../resource-form.html">Add a Building</a>
+        </nav>
         `;
     }
 }
