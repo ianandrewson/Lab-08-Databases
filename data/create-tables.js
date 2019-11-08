@@ -23,7 +23,7 @@ async function run() {
                 id SERIAL PRIMARY KEY NOT NULL,
                 name VARCHAR(256) NOT NULL,
                 built VARCHAR(256) NOT NULL,
-                is_home BOOLEAN NOT NULL,
+                is_home BOOLEAN 
                 location VARCHAR(256) NOT NULL,
                 url VARCHAR(256) NOT NULL,
                 height VARCHAR(256) NOT NULL
@@ -36,6 +36,8 @@ async function run() {
         // problem? let's see the error...
         console.log(err);
     }
+
+
     finally {
         // success or failure, need to close the db connection
         client.end();
