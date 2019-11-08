@@ -38,6 +38,21 @@ app.get('/api/buildings', async(req, res) => {
     }
 });
 
+app.get('api/ishome', async(req, res) => {
+    try {
+        const result = await client.query(`
+        SELECT
+            id,
+            name,
+            is_home
+        FROM 
+        `)
+    }
+    catch {
+
+    }
+});
+
 app.listen(PORT, () => {
     console.log('server runnong on port ' + PORT);
 })
