@@ -19,14 +19,11 @@ app.get('/api/buildings', async(req, res) => {
     try {
         const result = await client.query(`
             SELECT
-                id,
-                name,
-                built,
-                is_home,
-                location,
-                url,
-                height
-            FROM buildings;
+                b.*,
+                ih.ishome as ishome
+            FROM buildings b
+            JOIN ishome ih
+            ON b.is_home_id = ih.id;
         `);
         console.log(result.rows);
         res.json(result.rows);
