@@ -64,14 +64,15 @@ app.get('api/ishome', async(req, res) => {
             id,
             name,
             is_home
-        FROM 
-        `)
+        FROM ishome
+        `);
+        res.json(result.rows);
     }
-    catch {
-
+    catch (err) {
+        console.log(err);
     }
 });
 
 app.listen(PORT, () => {
     console.log('server runnong on port ' + PORT);
-})
+});
