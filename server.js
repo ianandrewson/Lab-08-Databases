@@ -37,7 +37,7 @@ app.get('/api/buildings', async(req, res) => {
 
 app.post('api/buildings', async(req, res) => {
     const building = req.body;
-    try{
+    try {
         const result = await client.query(`
             INSERT INTO buildings
                 name,
@@ -54,7 +54,7 @@ app.post('api/buildings', async(req, res) => {
     }
     catch (e){
         console.log(e);
-    };
+    }
 });
 
 app.get('api/ishome', async(req, res) => {
