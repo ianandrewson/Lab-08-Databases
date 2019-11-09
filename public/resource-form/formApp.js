@@ -11,7 +11,7 @@ class App extends Component {
         let isHomePartOfForm = dom.getElementsByClassName('is-home');
         dom.createElement('option');
     }
-    async renderHTML(){
+    renderHTML(){
         const dom = /*html*/`
             <form>
                 <label>Building Name</label>
