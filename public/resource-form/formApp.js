@@ -11,7 +11,7 @@ class App extends Component {
 
         let isHomePartOfForm = dom.getElementsByClassName('is-home');
         const optionsArray = isHomeValues.map((value) => {
-            const optionItem = dom.createElement('option');
+            const optionItem = document.createElement('option');
             optionItem.value = value;
             optionItem.textContent = value;
             htmlToDOM(optionItem);
