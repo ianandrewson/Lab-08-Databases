@@ -61,10 +61,9 @@ app.get('api/ishome', async(req, res) => {
     try {
         const result = await client.query(`
         SELECT
-            id,
-            name,
-            is_home
-        FROM ishome
+            id
+            ishome
+        FROM ishome;
         `);
         res.json(result.rows);
     }
