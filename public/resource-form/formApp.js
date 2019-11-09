@@ -9,7 +9,7 @@ class App extends Component {
         dom.prepend(headerDOM);
         const isHomeValues = await getIsHome();
 
-        let isHomePartOfForm = document.getElementsByClassName('is-home');
+        let isHomePartOfForm = document.querySelector('.is-home');
         const optionsArray = isHomeValues.map((value) => {
             const optionItem = document.createElement('option');
             optionItem.value = value;
@@ -18,7 +18,7 @@ class App extends Component {
             return optionItem;
         });
         optionsArray.forEach((option) => {
-            isHomePartOfForm.append(option);
+            isHomePartOfForm.appendChild(option);
         });
     }
     renderHTML(){
