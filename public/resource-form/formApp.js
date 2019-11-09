@@ -9,7 +9,7 @@ class App extends Component {
         dom.prepend(headerDOM);
         const isHomeValues = await getIsHome();
 
-        let isHomePartOfForm = dom.getElementsByClassName('is-home');
+        let isHomePartOfForm = document.getElementsByClassName('is-home');
         const optionsArray = isHomeValues.map((value) => {
             const optionItem = document.createElement('option');
             optionItem.value = value;
