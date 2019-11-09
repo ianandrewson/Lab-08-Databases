@@ -35,7 +35,7 @@ app.get('/api/buildings', async(req, res) => {
     }
 });
 
-app.post('api/buildings', async(req, res) => {
+app.post('/api/buildings', async(req, res) => {
     const building = req.body;
     try {
         const result = await client.query(`
@@ -57,7 +57,7 @@ app.post('api/buildings', async(req, res) => {
     }
 });
 
-app.get('api/ishome', async(req, res) => {
+app.get('/api/ishome', async(req, res) => {
     try {
         const result = await client.query(`
         SELECT
