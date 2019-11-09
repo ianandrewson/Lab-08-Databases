@@ -4,7 +4,7 @@ module.exports = [
         'built': '17th century',
         'is_home': true,
         'location': 'Grantham, Lincolnshire, England',
-        'url': '../public/assets/Woolsthorpe_Manor.jpg',
+        'url': '/assets/Woolsthorpe_Manor.jpg',
         'height': '3 stories'
     },
     {
@@ -12,7 +12,7 @@ module.exports = [
         'built': '1760',
         'is_home': true,
         'location': 'Copenhagen, Denmark',
-        'url': '../public/assets/Amalienborg.jpg',
+        'url': '/assets/Amalienborg.jpg',
         'height': '4 stories'
     },
     {
@@ -20,7 +20,7 @@ module.exports = [
         'built': 'Oct 20th 1973',
         'is_home': false,
         'location': 'Sydney, Australia',
-        'url': '../public/assets/sydney_opera_house.jpg',
+        'url': '/assets/sydney_opera_house.jpg',
         'height': '213 ft'
     },
     {
@@ -28,7 +28,7 @@ module.exports = [
         'built': 'TA 2889',
         'is_home': true,
         'location': 'Bagshot Row, Hobbiton',
-        'url': '../public/assets/baggins.png',
+        'url': '/assets/baggins.png',
         'height': '1 story'
     },
     {
@@ -36,7 +36,7 @@ module.exports = [
         'built': '1963',
         'is_home': true,
         'location': 'Novato, California',
-        'url': '../public/assets/hildhood_home.jpg',
+        'url': '/assets/childhood_home.jpg',
         'height': '2.5 stories'
     },
     { 
@@ -44,7 +44,7 @@ module.exports = [
         'built': 2012,
         'is_home': true,
         'location': 'Mecca, Saudi Arabia',
-        'url': 'https://en.wikipedia.org/wiki/Abraj_Al_Bait#/media/File:Abraj-al-Bait-Towers.JPG',
+        'url': 'https://upload.wikimedia.org/wikipedia/en/f/f4/Abraj-al-Bait-Towers.JPG',
         'height': '120 floors'
     },
     {
@@ -52,7 +52,7 @@ module.exports = [
         'built': '1700s',
         'is_home': true,
         'location': 'Berne, Germany',
-        'url': 'https://en.wikipedia.org/wiki/Einsteinhaus#/media/File:Albert_einstein_house_bern.JPG',
+        'url': 'https://upload.wikimedia.org/wikipedia/commons/7/77/Albert_einstein_house_bern.JPG',
         'height': '3 floors'
     },
     {
@@ -60,7 +60,7 @@ module.exports = [
         'built': '1861-1875',
         'is_home': false,
         'location': 'Paris, France',
-        'url': 'https://en.wikipedia.org/wiki/Palais_Garnier#/media/File:Op%C3%A9ra_Garnier_-_le_Grand_Foyer.jpg',
+        'url': 'https://upload.wikimedia.org/wikipedia/commons/2/27/Op%C3%A9ra_Garnier_-_le_Grand_Foyer.jpg',
         'height': '184ft',
     },
     {
@@ -68,7 +68,7 @@ module.exports = [
         'built': '1930',
         'is_home': true,
         'location': 'New York, New York',
-        'url': 'https://en.wikipedia.org/wiki/Wyndham_New_Yorker_Hotel#/media/File:NewYorker_Hotel.JPG',
+        'url': 'https://upload.wikimedia.org/wikipedia/commons/f/fb/NewYorker_Hotel.JPG',
         'height': '43 floors',
     },
     {
@@ -76,7 +76,7 @@ module.exports = [
         'built': '1015-1439',
         'is_home': false,
         'location': 'Strasbourg, France',
-        'url': 'https://en.wikipedia.org/wiki/Strasbourg_Cathedral#/media/File:Strasbourg_Cathedral_Exterior_-_Diliff.jpg',
+        'url': 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Strasbourg_Cathedral_Exterior_-_Diliff.jpg',
         'height': '466 ft',
     }
 ];
