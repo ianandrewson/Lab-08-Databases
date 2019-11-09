@@ -1,12 +1,13 @@
 import Component from '../Component.js';
 import Header from '../common/Header.js';
-import getIsHome from '../services/domain-api.js';
+import { getIsHome } from '../services/domain-api.js';
 class App extends Component {
     async onRender(dom){
         const header = new Header();
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
         const isHomeValues = getIsHome();
+        debugger
         let isHomePartOfForm = dom.getElementsByClassName('is-home');
         dom.createElement('option');
     }
