@@ -7,7 +7,7 @@ class App extends Component {
         const header = new Header();
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
-        const isHomeValues = getIsHome();
+        const isHomeValues = await getIsHome();
 
         let isHomePartOfForm = dom.getElementsByClassName('is-home');
         const optionsArray = isHomeValues.map((value) => {
