@@ -12,8 +12,8 @@ class App extends Component {
         let isHomePartOfForm = document.querySelector('.is-home');
         const optionsArray = isHomeValues.map((value) => {
             const optionItem = document.createElement('option');
-            optionItem.value = value;
-            optionItem.textContent = value;
+            optionItem.value = value['ishome'];
+            optionItem.textContent = value['ishome'];
             htmlToDOM(optionItem);
             return optionItem;
         });
