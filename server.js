@@ -14,6 +14,7 @@ const PORT = process.env.PORT;
 app.use(morgan('dev'));
 app.use(cors());
 app.use(express.static('public'));
+app.use(express.json());
 
 app.get('/api/buildings', async(req, res) => {
     try {
@@ -40,16 +41,16 @@ app.post('/api/buildings', async(req, res) => {
     try {
         const result = await client.query(`
             INSERT INTO buildings
-                name,
+                (name,
                 built,
                 is_home_id,
                 location,
                 url,
-                height,
+                height)
             VALUES($1, $2, $3, $4, $5, $6)
             RETURNING *;
-        `)
-        [building.name, building.built, building.is_home_id, building.location, building.url, building.height];
+        `,
+        [building.name, building.built, building.is_home_id, building.location, building.url, building.height]);
         res.json(result.rows[0]);
     }
     catch (e){
@@ -73,5 +74,5 @@ app.get('/api/ishome', async(req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log('server runnong on port ' + PORT);
+    console.log('server running on port ' + PORT);
 });
