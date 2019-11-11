@@ -15,7 +15,7 @@ class App extends Component {
         const optionsArray = isHomeValues.map((value) => {
             const optionItem = document.createElement('option');
             optionItem.value = value['ishome'];
-            optionItem.textContent = (value['ishome'] === 1 );
+            optionItem.textContent = (value['ishome'] === 1);
             htmlToDOM(optionItem);
             return optionItem;
         });
@@ -35,12 +35,9 @@ class App extends Component {
                 url: buildingForm.get('url'),
                 height: buildingForm.get('height')
             };
-
             await postBuilding(newBuilding);
-            
-
-
         });
+        
     }
     renderHTML(){
         const dom = /*html*/`
