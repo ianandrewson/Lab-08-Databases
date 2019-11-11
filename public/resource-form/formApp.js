@@ -13,7 +13,7 @@ class App extends Component {
         const optionsArray = isHomeValues.map((value) => {
             const optionItem = document.createElement('option');
             optionItem.value = value['ishome'];
-            optionItem.textContent = value['ishome'];
+            optionItem.textContent = (value['ishome'] === 1);
             htmlToDOM(optionItem);
             return optionItem;
         });
