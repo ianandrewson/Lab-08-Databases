@@ -28,8 +28,8 @@ class App extends Component {
                     <input type = 'text'>
                 <label>Built</label>
                     <input type = 'text'>
-                <label class = 'is-home'>Is it a home?</label>
-                
+                <label>Is it a home?</label>
+                <select class = 'is-home'></select>
                 <label>Location</label>
                     <input type = 'text'>
                 <label>Link to image</label>
