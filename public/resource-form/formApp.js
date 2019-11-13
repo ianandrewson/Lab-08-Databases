@@ -35,12 +35,9 @@ class App extends Component {
                 url: buildingForm.get('url'),
                 height: buildingForm.get('height')
             };
-
             await postBuilding(newBuilding);
-            
-
-
         });
+        
     }
     renderHTML(){
         const dom = /*html*/`
