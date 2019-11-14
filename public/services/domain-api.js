@@ -35,3 +35,12 @@ export async function getSingleBuilding(id) {
     const data = await response.json();
     return data;
 }
+
+export async function deleteSingleBuilding(id) {
+    const url = `${URL}/buildings/${id}`;
+    const response = await fetch(url, {
+        method : 'DELETE'
+    });
+    const data = await response.json();
+    return data;
+}

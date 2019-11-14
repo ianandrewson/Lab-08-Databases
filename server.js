@@ -93,6 +93,23 @@ app.get('/api/buildings/:id', async(req, res) => {
         console.log(err);
     }
 });
+app.delete('/api/buildings/:id', async(req, res) => {
+    const id = req.params.id;
+    console.log(id);
+    try {
+        const result = await client.query(`
+        DELETE
+        FROM buildings
+        WHERE id = ${id}
+        RETURNING *;
+        `
+        );
+        res.json(result.rows);
+    }
+    catch (err){
+        console.log(err);
+    }
+});
 
 app.listen(PORT, () => {
     console.log('server running on port ' + PORT);
