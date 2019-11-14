@@ -19,7 +19,20 @@ async function run() {
     
         // run a query to create tables
         await client.query(`
-          
+            CREATE TABLE ishome (
+                id SERIAL PRIMARY KEY NOT NULL,
+                ishome BOOLEAN NOT NULL
+            );
+
+            CREATE TABLE buildings (
+                id SERIAL PRIMARY KEY NOT NULL,
+                name VARCHAR(256) NOT NULL,
+                built VARCHAR(256) NOT NULL,
+                is_home_id INTEGER NOT NULL REFERENCES ishome(id),
+                location VARCHAR(256) NOT NULL,
+                url VARCHAR(256) NOT NULL,
+                height VARCHAR(256) NOT NULL
+            )
         `);
 
         console.log('create tables complete');
@@ -28,6 +41,8 @@ async function run() {
         // problem? let's see the error...
         console.log(err);
     }
+
+
     finally {
         // success or failure, need to close the db connection
         client.end();

@@ -11,7 +11,8 @@ async function run() {
         await client.connect();
     
         await client.query(`
-
+            DROP TABLE IF EXISTS buildings;
+            DROP TABLE IF EXISTS ishome;
         `);
 
         console.log('drop tables complete');
