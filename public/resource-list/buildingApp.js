@@ -20,13 +20,16 @@ class App extends Component {
             dom.appendChild(aBuildingDOM);
         });
 
-        document.querySelector('.building-list').addEventListener('click', event => {
-            const url = window.location;
-            console.log(event.target);
-            const queryParams = event.target.id;
-            const detailedBuilding = new BuildingDetail(getSingleBuilding(queryParams));
-            window.location = url + '?' + queryParams;
-            document.body.append(detailedBuilding);
+        document.querySelector('.building-list').addEventListener('click', async (event) => {
+            const id = event.target.id;
+            console.log(event.target.id);
+            const searchParams = new URLSearchParams();
+            searchParams.set('id', id);
+            //const detailedBuilding = new BuildingDetail(await getSingleBuilding(id));
+            //console.log(detailedBuilding);
+            window.location = '../detail.html#' + searchParams.toString();
+            //window.location.hash = searchParams.toString();
+            //document.body.append(detailedBuilding.renderDOM());
         });
     }   
 

@@ -4,7 +4,7 @@ import Header from '../common/Header.js';
 export class BuildingDetail extends Component {
     onRender(){
         const header = new Header();
-        const headerDOM = header.renderDOM;
+        const headerDOM = header.renderDOM();
         document.body.prepend(headerDOM);
 
     }

@@ -31,6 +31,7 @@ export async function postBuilding(form){
 
 export async function getSingleBuilding(id) {
     const url = `${URL}/buildings/${id}`;
-    return fetch(url)
-        .then(response => response.json());
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
 }

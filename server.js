@@ -73,24 +73,25 @@ app.get('/api/ishome', async(req, res) => {
     }
 });
 
-app.get('/api/buildings/:id', async (req, res) => {
+app.get('/api/buildings/:id', async(req, res) => {
     const id = req.params.id;
-
-    try{
+    console.log(id);
+    try {
         const result = await client.query(`
         SELECT
             b.*,
             ih.ishome as ishome
         FROM buildings b
         JOIN ishome ih
-        ON b.is_home_id = ih.id;
-        WHERE b.id = ${id}
-        `, [building.name, building.built, building.is_home_id, building.location, building.url, building.height]);
+        ON b.is_home_id = ih.id
+        WHERE b.id = ${id};
+        `
+        );
         res.json(result.rows[0]);
     }
-    catch{
-
-    };
+    catch (err){
+        console.log(err);
+    }
 });
 
 app.listen(PORT, () => {
